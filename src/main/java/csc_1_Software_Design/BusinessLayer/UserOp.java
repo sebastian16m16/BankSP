@@ -1,6 +1,7 @@
 package csc_1_Software_Design.BusinessLayer;
 
 import csc_1_Software_Design.DataLayer.Account;
+import csc_1_Software_Design.DataLayer.Client;
 import csc_1_Software_Design.DataLayer.Login;
 import java.sql.*;
 
@@ -56,8 +57,37 @@ public class UserOp {
         prepSt.executeUpdate();
     }
 
-    public static void transferRO(Login login, Connection, Account receiver, float amount){
-        String stmt = "UPDATE A";
+    public static String transferRO(Login login, Connection connection, Client receiver, float amount) throws  SQLException{
+
+        //Check the balance of the sender account
+        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ?, type = 'RO'";
+        PreparedStatement check = connection.prepareStatement(checkBalance);
+        check.setInt(1,login.getClient_id());
+        ResultSet qResult = check.executeQuery();
+
+        int balance = qResult.getInt("Balance");
+
+        //Check to see if there are enough money on the sender account
+        if(balance > amount){
+
+            // Send money
+            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ?, type = 'RO'";
+            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ?, type = 'RO'";
+
+            PreparedStatement prepST1 = connection.prepareStatement(stmt);
+            PreparedStatement prepSt2 = connection.prepareStatement(stmt2);
+
+
+            prepST1.setFloat(1,  amount);
+            prepST1.setInt(2, receiver.getClient_id());
+
+            prepSt2.setFloat(1, amount);
+            prepSt2.setInt(2, login.getClient_id());
+
+            return "The transfer was successful!";
+        }else
+            return "Insufficient funds!";
+
     }
 
 
