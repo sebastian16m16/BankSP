@@ -3,14 +3,16 @@ package csc_1_Software_Design.DataLayer;
 public class Client {
 
 	Account[] accounts = new Account[5];
+
 	
 	int nr_cont=0;
-	int client_id;
-	String cnp;
-	String cni;
-	String first_name;
-	String last_name;
-	String address;
+	private int client_id;
+	private String cnp;
+	private String cni;
+	private String first_name;
+	private String last_name;
+	private String address;
+	public static int login_id = 0;
 
 	public Client(String cnp, String cni, String first_name, String last_name, String address){
 		this.cnp = cnp;
@@ -18,6 +20,7 @@ public class Client {
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.address = address;
+		login_id++;
 	}
 
 	/**

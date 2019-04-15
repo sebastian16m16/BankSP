@@ -4,15 +4,18 @@ import java.sql.Date;
 
 public class Account {
 	
-	String cnp;
+	private String cnp;
 	int account_id;
-	int balance;
+	private int balance;
 	Date createdDate;
 	String type;
 	
 	
-	public Account() {
-		
+	public Account(int account_id, Date createdDate, String type, int initialDeposit) {
+		this.account_id = account_id;
+		this.createdDate = createdDate;
+		this.type = type;
+		this.balance = initialDeposit;
 	}
 
 	/**
