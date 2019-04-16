@@ -4,17 +4,21 @@ import java.sql.Date;
 
 public class AccountEUR extends Account {
 	
-	public AccountEUR(Date created_date, String type, String CNP) {
+	public AccountEUR(int account_id, int client_id, Date created_date, String type) {
 		this.createdDate = created_date;
 		this.type = type;
-		this.cnp = CNP;
+		this.account_id = account_id;
+		this.client_id = client_id;
+
 	}
 	
-	public AccountEUR(Date created_date, String type, String CNP, int initialBalance) {
+	public AccountEUR(int account_id, int client_id, Date created_date, String type,int initialBalance) {
 		this.createdDate = created_date;
 		this.type = type;
-		this.cnp = CNP;
 		this.balance = initialBalance;
+		this.account_id = account_id;
+		this.client_id = client_id;
+
 	}
 	
 }

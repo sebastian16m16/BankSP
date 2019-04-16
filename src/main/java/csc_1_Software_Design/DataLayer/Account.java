@@ -3,19 +3,24 @@ package csc_1_Software_Design.DataLayer;
 import java.sql.Date;
 
 public class Account {
+
+	protected int account_id;
+	protected int client_id;
+	protected int balance;
+	protected Date createdDate;
+	protected String type;
 	
-	private String cnp;
-	int account_id;
-	private int balance;
-	Date createdDate;
-	String type;
 	
-	
-	public Account(int account_id, Date createdDate, String type, int initialDeposit) {
-		this.account_id = account_id;
-		this.createdDate = createdDate;
-		this.type = type;
-		this.balance = initialDeposit;
+//	public Account(int account_id, int client_id, Date createdDate, String type, int initialDeposit) {
+//		this.account_id = account_id;
+//		this.createdDate = createdDate;
+//		this.type = type;
+//		this.balance = initialDeposit;
+//		this.client_id = client_id;
+//	}
+
+	public int getClient_id() {
+		return client_id;
 	}
 
 	/**

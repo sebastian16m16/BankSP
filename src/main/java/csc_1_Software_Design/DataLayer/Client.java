@@ -1,27 +1,48 @@
 package csc_1_Software_Design.DataLayer;
 
+import sun.rmi.runtime.Log;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Client {
 
 	Account[] accounts = new Account[5];
 
 	
 	int nr_cont=0;
-	private int client_id;
+	private static int client_id;
 	private String cnp;
 	private String cni;
 	private String first_name;
 	private String last_name;
 	private String address;
-	public static int login_id = 0;
+	private int login_id;
 
-	public Client(String cnp, String cni, String first_name, String last_name, String address){
+
+	public Client(Connection connection, String cnp, String cni, String first_name, String last_name, String address) throws SQLException {
 		this.cnp = cnp;
 		this.cni = cni;
 		this.first_name = first_name;
 		this.last_name = last_name;
 		this.address = address;
-		login_id++;
+		client_id++;
+
+		String stmt = "INSERT INTO Client ('Client_id', 'CNP', 'CNI', 'Last Name', 'First Name', 'Address', 'login_id') " +
+				"VALUES(?, ?, ?, ?, ?, ?, ?)";
+		PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+		preparedStatement.setInt(1,client_id);
+		preparedStatement.setString(2,cnp);
+		preparedStatement.setString(3,cni);
+		preparedStatement.setString(4, last_name);
+		preparedStatement.setString(5,first_name);
+		preparedStatement.setString(6,address);
+		preparedStatement.setInt(7,login_id);
+		preparedStatement.executeUpdate();
+
 	}
+
 
 	/**
 	 * @return the client_id

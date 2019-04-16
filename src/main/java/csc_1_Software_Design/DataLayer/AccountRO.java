@@ -4,17 +4,21 @@ import java.sql.Date;
 
 public class AccountRO extends Account{
 
-	public AccountRO(Date created_date, String type, String CNP) {
+	public AccountRO(int account_id, int client_id, Date created_date, String type) {
 		this.createdDate = created_date;
 		this.type = type;
-		this.cnp = CNP;
+		this.account_id = account_id;
+		this.client_id = client_id;
+
 	}
-	
-	public AccountRO(Date created_date, String type, String CNP, int initialBalance) {
+
+	public AccountRO(int account_id, int client_id, Date created_date, String type,int initialBalance) {
 		this.createdDate = created_date;
 		this.type = type;
-		this.cnp = CNP;
 		this.balance = initialBalance;
+		this.account_id = account_id;
+		this.client_id = client_id;
+
 	}
 	
 	

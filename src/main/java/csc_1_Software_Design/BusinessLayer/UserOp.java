@@ -1,11 +1,13 @@
 package csc_1_Software_Design.BusinessLayer;
 
-import csc_1_Software_Design.DataLayer.Account;
-import csc_1_Software_Design.DataLayer.Client;
-import csc_1_Software_Design.DataLayer.Login;
+import csc_1_Software_Design.DataLayer.*;
+
+import javax.crypto.AEADBadTagException;
 import java.sql.*;
 
 public class UserOp {
+
+    double currency =  4.712;
 
     public static String getInformation(Login login, Connection connection) throws SQLException {
         String stmt = "SELECT * FROM Client where login_id == ?";
@@ -57,10 +59,46 @@ public class UserOp {
         prepSt.executeUpdate();
     }
 
-    public static String transferRO(Login login, Connection connection, Client receiver, float amount) throws  SQLException{
+    public static String transferRO(Login login, Connection connection, AccountRO accountRO, Client receiver, AccountRO recieverRO, double amount) throws  SQLException{
 
         //Check the balance of the sender account
-        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ?, type = 'RO'";
+        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ? AND Account_id = ? AND type = 'RO'";
+        PreparedStatement check = connection.prepareStatement(checkBalance);
+        check.setInt(1,login.getClient_id());
+        check.setInt(2, accountRO.getAccount_id());
+        ResultSet qResult = check.executeQuery();
+
+        int balance = qResult.getInt("Balance");
+
+        //Check to see if there are enough money on the sender account
+        if(balance > amount){
+
+            // Send money
+            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ? AND Account_id = ? AND type = 'RO'";
+            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ? AND Account_id = ? AND type = 'RO'";
+
+            PreparedStatement prepST1 = connection.prepareStatement(stmt);
+            PreparedStatement prepSt2 = connection.prepareStatement(stmt2);
+
+
+            prepST1.setDouble(1,  amount);
+            prepST1.setInt(2, receiver.getClient_id());
+            prepST1.setInt(3,recieverRO.getAccount_id());
+
+            prepSt2.setDouble(1, amount);
+            prepSt2.setInt(2, login.getClient_id());
+            prepSt2.setInt(3,accountRO.getAccount_id());
+
+            return "The transfer was successful!";
+        }else
+            return "Insufficient funds!";
+
+    }
+
+    public static String transferEUR(Login login, Connection connection, AccountEUR accountEUR, Client receiver, AccountEUR receiverEUR, double amount) throws  SQLException{
+
+        //Check the balance of the sender account
+        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ? AND type = 'EUR'";
         PreparedStatement check = connection.prepareStatement(checkBalance);
         check.setInt(1,login.getClient_id());
         ResultSet qResult = check.executeQuery();
@@ -71,20 +109,84 @@ public class UserOp {
         if(balance > amount){
 
             // Send money
-            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ?, type = 'RO'";
-            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ?, type = 'RO'";
+            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ? AND Account_id = ? AND type = 'EUR'";
+            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ? AND Account_id = ? AND type = 'EUR'";
 
             PreparedStatement prepST1 = connection.prepareStatement(stmt);
             PreparedStatement prepSt2 = connection.prepareStatement(stmt2);
 
 
-            prepST1.setFloat(1,  amount);
+            prepST1.setDouble(1,  amount);
             prepST1.setInt(2, receiver.getClient_id());
+            prepST1.setInt(3,receiverEUR.getAccount_id());
 
-            prepSt2.setFloat(1, amount);
+            prepSt2.setDouble(1, amount);
             prepSt2.setInt(2, login.getClient_id());
+            prepSt2.setInt(3,accountEUR.getAccount_id());
 
             return "The transfer was successful!";
+        }else
+            return "Insufficient funds!";
+
+    }
+
+    public String currencyExchangeROtoEUR(Login login, Connection connection, AccountRO accountRO, AccountEUR accountEUR, double amountInEur) throws SQLException{
+
+        //Check the balance of the sender account
+        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ? AND Account_id = ? AND type = 'RO'";
+        PreparedStatement check = connection.prepareStatement(checkBalance);
+        check.setInt(1,login.getClient_id());
+        check.setInt(2,accountRO.getAccount_id());
+        ResultSet qResult = check.executeQuery();
+
+        int balance = qResult.getInt("Balance");
+
+        //Check to see if there are enough money on the sender account
+        if(balance > amountInEur*currency) {
+
+            String stmt1 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ? AND type = 'RO' ";
+            String stmt2 = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ? AND type = 'EUR'";
+
+            PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
+            PreparedStatement preparedStatement2 = connection.prepareStatement(stmt2);
+
+            preparedStatement1.setDouble(1, amountInEur * currency);
+            preparedStatement1.setInt(2, accountRO.getClient_id());
+
+            preparedStatement2.setDouble(1, amountInEur);
+            preparedStatement2.setInt(2, accountEUR.getClient_id());
+
+            return "The exchange was successful!";
+        }else
+            return "Insufficient funds!";
+    }
+
+    public String currencyExchangeEURtoRO(Login login, Connection connection, AccountEUR accountEUR, AccountRO accountRO, double amountInRO) throws  SQLException{
+
+        //Check the balance of the sender account
+        String checkBalance = "SELECT Balance FROM Account WHERE Client_id = ?, type = 'EUR'";
+        PreparedStatement check = connection.prepareStatement(checkBalance);
+        check.setInt(1,login.getClient_id());
+        ResultSet qResult = check.executeQuery();
+
+        int balance = qResult.getInt("Balance");
+
+        //Check to see if there are enough money on the sender account
+        if(balance > amountInRO/currency) {
+
+            String stmt1 = "UPDATE Account SET Balance = Balance - ? WHERE Client_id = ?, type = 'EUR' "; // take euros from account
+            String stmt2 = "UPDATE Account SET Balance = Balance + ? WHERE Client_id = ?, type = 'RO'"; // add money to receiver account
+
+            PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
+            PreparedStatement preparedStatement2 = connection.prepareStatement(stmt2);
+
+            preparedStatement1.setDouble(1, amountInRO / currency);
+            preparedStatement1.setInt(2, accountRO.getClient_id());
+
+            preparedStatement2.setDouble(1, amountInRO);
+            preparedStatement2.setInt(2, accountEUR.getClient_id());
+
+            return "The exchange was successful!";
         }else
             return "Insufficient funds!";
 
