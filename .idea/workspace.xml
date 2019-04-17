@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d640429-4a61-41b8-891c-f2b0b0289eb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/DBConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/MainOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/MainOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountEUR.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountRO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/DBConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/MainOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/MainOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/UserOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/UserOp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/AccountEUR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/AccountRO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/csc_1_Software_Design/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/csc_1_Software_Design/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/MainOp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+            <state relative-caret-position="253">
+              <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,11 +48,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="399">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="27" selection-end-column="28" />
               <folding>
-                <element signature="method#printAccounts#0;class#AccountOP#0" />
                 <element signature="method#getAccountByClient_id#0;class#AccountOP#0" />
+                <element signature="method#createAccount#0;class#AccountOP#0" />
                 <element signature="method#balanceUpdate#0;class#AccountOP#0" />
                 <element signature="method#updateAccountType#0;class#AccountOP#0" />
                 <element signature="method#transfer#0;class#AccountOP#0" />
@@ -92,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303">
-              <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+            <state relative-caret-position="77">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
                 <element signature="method#deleteClient#0;class#ClientOP#0" />
                 <element signature="method#updateClient#0;class#ClientOP#0" />
@@ -106,12 +84,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="57">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
               <folding>
                 <element signature="method#createUserLogin#0;class#LoginOP#0" />
+                <element signature="method#addLoginIdToClient#0;class#LoginOP#0" />
                 <element signature="method#createAdminLogin#0;class#LoginOP#0" />
                 <element signature="method#updateUsernameUser#0;class#LoginOP#0" />
                 <element signature="method#updatePassword#0;class#LoginOP#0" />
@@ -123,8 +111,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="171">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+              <folding>
+                <element signature="e#1080#1081#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,13 +141,13 @@
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountRO.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/MainOp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" />
       </list>
     </option>
   </component>
@@ -256,7 +247,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -360,13 +351,48 @@
       <option name="project" value="LOCAL" />
       <updated>1555425209418</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="blue3">
+      <created>1555503595290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1555503595290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27125505" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info id="simpleUML" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19180633" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32955465" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27125505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
@@ -391,35 +417,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" weight="0.32955465" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26153848" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="simpleUML" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.19180633" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -453,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -486,26 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding>
-            <element signature="method#createUserLogin#0;class#LoginOP#0" />
-            <element signature="method#createAdminLogin#0;class#LoginOP#0" />
-            <element signature="method#updateUsernameUser#0;class#LoginOP#0" />
-            <element signature="method#updatePassword#0;class#LoginOP#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -525,21 +495,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/MainOp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+        <state relative-caret-position="253">
+          <caret line="27" column="63" lean-forward="true" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="399">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="27" selection-end-column="28" />
           <folding>
-            <element signature="method#printAccounts#0;class#AccountOP#0" />
             <element signature="method#getAccountByClient_id#0;class#AccountOP#0" />
+            <element signature="method#createAccount#0;class#AccountOP#0" />
             <element signature="method#balanceUpdate#0;class#AccountOP#0" />
             <element signature="method#updateAccountType#0;class#AccountOP#0" />
             <element signature="method#transfer#0;class#AccountOP#0" />
@@ -547,13 +524,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#1080#1081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        <state relative-caret-position="77">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
           <folding>
             <element signature="method#deleteClient#0;class#ClientOP#0" />
             <element signature="method#updateClient#0;class#ClientOP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="method#createUserLogin#0;class#LoginOP#0" />
+            <element signature="method#addLoginIdToClient#0;class#LoginOP#0" />
+            <element signature="method#createAdminLogin#0;class#LoginOP#0" />
+            <element signature="method#updateUsernameUser#0;class#LoginOP#0" />
+            <element signature="method#updatePassword#0;class#LoginOP#0" />
           </folding>
         </state>
       </provider>

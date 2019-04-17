@@ -28,8 +28,10 @@ public class  MainOp
            // clientOP.insertClient(connection.connection, c1);
             Client cExist = new Client();
             clientOP.getClientByID(connection.connection,1);
-            accountOP.createAccount(connection.connection, cExist,"Saving", date);
             loginOP.createUserLogin(connection.connection, cExist, "user", "user");
+            loginOP.addLoginIdToClient(connection.connection, cExist, l1);
+            accountOP.createAccount(connection.connection, cExist,"Saving", date);
+
 
 
         }catch (SQLException e){

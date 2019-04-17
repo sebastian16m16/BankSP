@@ -60,7 +60,7 @@ public class AccountOP {
     }
 
     public void createAccount(Connection connection, Client client, String type, Date created_date) throws SQLException{
-        String stmt = "INSERT INTO Account(client_id,type,created_date, balance) VALUES (?,?,?,?)";
+        String stmt = "INSERT INTO Account(client_id, type, created_date, balance) VALUES (?,?,?,?)";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setInt(1, client.getClient_id());
         preparedStatement.setString(2,type);

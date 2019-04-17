@@ -9,6 +9,7 @@ public class Login {
     private String password;
     private Boolean administrator;
 
+    public Login(){}
     //user-Client
     public Login( int client_id, String username, String password) throws SQLException {
         this.username = username;
@@ -31,6 +32,10 @@ public class Login {
         this.password = password;
         this.administrator = administrator;
 
+    }
+
+    public void setClient_id(int client_id) {
+        this.client_id = client_id;
     }
 
     public int getClient_id() {

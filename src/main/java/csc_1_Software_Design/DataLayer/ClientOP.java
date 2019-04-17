@@ -48,8 +48,8 @@ public class ClientOP {
                 foundClient.setAddress(address);
 
                 //Display values
-//                System.out.println("Client ID: " + id + " CNP: " + cnp + " CNI: " + cni +
-//                        " Last Name: " + last_name + " First_name: " + first_name + " Address:" + address);
+                System.out.println("Client ID: " + id + " CNP: " + cnp + " CNI: " + cni +
+                        " Last Name: " + last_name + " First_name: " + first_name + " Address:" + address);
 
             }
             queryResult.close();
