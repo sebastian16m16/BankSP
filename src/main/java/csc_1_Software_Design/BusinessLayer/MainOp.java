@@ -4,9 +4,9 @@ import csc_1_Software_Design.DataLayer.*;
 
 
 import java.sql.Connection;
-import java.sql.Date;
 
 import java.sql.SQLException;
+import java.sql.Date;
 
 
 public class  MainOp
@@ -14,7 +14,9 @@ public class  MainOp
     public static void main(String[] args) throws SQLException {
 
         DBConnection connection = DBConnection.getConnection();
-        Date date = new Date(2019, 5, 17);
+        long millis=System.currentTimeMillis();
+        Date date = new Date(millis);
+
         Client c1 = new Client("1940129125999", "1234ff4", "Sebastian", "Muresan", "Str.Vagabonzilor 25, Cluj-Napoca");
 
         Login l1 = new Login(c1.getClient_id(), "Ishtvan", "1234");
@@ -25,12 +27,12 @@ public class  MainOp
         ClientOP clientOP = new ClientOP();
 
         try {
-           // clientOP.insertClient(connection.connection, c1);
-            Client cExist = new Client();
-            clientOP.getClientByID(connection.connection,1);
-            loginOP.createUserLogin(connection.connection, cExist, "user", "user");
-            loginOP.addLoginIdToClient(connection.connection, cExist, l1);
-            accountOP.createAccount(connection.connection, cExist,"Saving", date);
+//            clientOP.insertClient(connection.connection, c1);
+//            loginOP.createUserLogin(connection.connection, c1, "user", "user");
+            Client cExist = clientOP.getClientByID(connection.connection, 7);
+            accountOP.createAccount(connection.connection, cExist, "College fund", date);
+
+
 
 
 

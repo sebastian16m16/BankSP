@@ -1,5 +1,7 @@
 package csc_1_Software_Design.DataLayer;
 
+import java.sql.Date;
+import java.util.*;
 import java.sql.*;
 
 public class AccountOP {
@@ -67,6 +69,8 @@ public class AccountOP {
         preparedStatement.setDate(3, created_date);
         preparedStatement.setDouble(4, 0);
         preparedStatement.executeUpdate();
+
+        System.out.println("Account created!S");
     }
 
     public void topUp(Connection connection, int account_id, double insertMoney) throws SQLException{
@@ -120,6 +124,16 @@ public class AccountOP {
             return "Insufficient funds!";
 
 
+    }
+
+    public void deleteAccountById(Connection connection, int account_id) throws SQLException{
+
+        String stmt = "DELETE FROM Account where account_id = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+
+        preparedStatement.setInt(1, account_id);
+        preparedStatement.executeUpdate();
+        System.out.println("Account with id: " + account_id + " was removed!");
     }
 
 }

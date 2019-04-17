@@ -6,12 +6,16 @@ public class LoginOP {
 
     public void createUserLogin(Connection connection, Client client, String username, String password) throws SQLException {
 
-        String stmt = "INSERT INTO Login (client_id, username, password) VALUES (?, ?, ?)";
+        String stmt = "INSERT INTO Login (username, password, administrator, CNP) VALUES (?, ?, ?, ?)";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-        preparedStatement.setInt(1, client.getClient_id());
-        preparedStatement.setString(2,username);
-        preparedStatement.setString(3, password);
+        preparedStatement.setString(1,username);
+        preparedStatement.setString(2, password);
+        preparedStatement.setBoolean(3, false);
+        preparedStatement.setString(4, client.getCnp());
         preparedStatement.executeUpdate();
+
+        System.out.println("Login created!");
+
     }
 
     public  void addLoginIdToClient(Connection connection, Client client, Login login) throws SQLException{
@@ -29,9 +33,11 @@ public class LoginOP {
         preparedStatement.setString(2, password);
         preparedStatement.setBoolean(3, true);
         preparedStatement.executeUpdate();
+
+        System.out.println("Admin login created! \n  UserName: " + username + " Password: " + password);
     }
 
-    public Login getLoginByID(Connection connection, int id)throws SQLException{
+    public Login getLoginByID(Connection connection, int id) throws SQLException{
         Login login = new Login();
 
         String stmt = "Select * from login where login_id =?";
@@ -72,5 +78,13 @@ public class LoginOP {
         preparedStatement.setInt(2, login.getLogin_id());
 
         preparedStatement.executeUpdate();
+    }
+
+    public void deleteLogin(Connection connection, String username) throws SQLException{
+        String stmt = "DELETE FROM login where username = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, username);
+        preparedStatement.executeUpdate();
+        System.out.println("Login with username: " + username + " was removed!");
     }
 }

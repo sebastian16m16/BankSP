@@ -1,5 +1,7 @@
 package csc_1_Software_Design.DataLayer;
 
+import com.sun.org.apache.bcel.internal.generic.InstructionConstants;
+
 import java.sql.*;
 
 public class ClientOP {
@@ -16,6 +18,7 @@ public class ClientOP {
             prepSt.setString(5, client.getAddress());
 
             prepSt.executeUpdate();
+            System.out.println("Client created!");
         }
 
         public Client getClientByID(Connection connection, int client_id) throws SQLException {
@@ -58,8 +61,51 @@ public class ClientOP {
             return foundClient;
         }
 
+        public Client getClientByCNP(Connection connection, String cnp) throws SQLException{
+
+            Client foundClient = new Client();
+
+            String stmt = "Select * from client where cnp = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            int client_id = resultSet.getInt("client_id");
+            String cni = resultSet.getString("cni");
+            String last_name = resultSet.getString("last_name");
+            String first_name = resultSet.getString("first_name");
+            String address = resultSet.getString("address");
+
+            foundClient.setClient_id(client_id);
+            foundClient.setCni(cni);
+            foundClient.setLast_name(last_name);
+            foundClient.setFirst_name(first_name);
+            foundClient.setAddress(address);
+
+            System.out.println("Client found!");
+            return foundClient;
+
+
+        }
+
         public void deleteClient(Connection connection, Client client) throws SQLException{
-            String statement = "DELETE FROM client where client_id =?";
+            String stmt = "SET foreign_key_checks = 0; \n" +
+                    "DELETE FROM account where client_id = ?;\n" +
+                    "SET foreign_key_checks = 1;";
+            PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+            preparedStatement.setInt(1, client.getClient_id());
+            preparedStatement.executeUpdate();
+
+            String stmt1 = "SET foreign_key_checks = 0; \n" +
+                    "DELETE FROM login where CNP = ?;\n" +
+                    "SET foreign_key_checks = 1;";
+            PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
+            preparedStatement1.setString(1, client.getCnp());
+            preparedStatement1.executeUpdate();
+
+            String statement = "SET foreign_key_checks = 0; \n" +
+                    "DELETE FROM client where client_id = ?;\n" +
+                    "SET foreign_key_checks = 1;";
             PreparedStatement prepSt = connection.prepareStatement(statement);
             prepSt.setInt(1, client.getClient_id());
             prepSt.executeUpdate();

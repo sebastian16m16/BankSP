@@ -11,6 +11,7 @@ public class Client {
 	private String first_name;
 	private String last_name;
 	private String address;
+	private int login_id;
 
 
 	public Client(String cnp, String cni, String first_name, String last_name, String address) throws SQLException {
@@ -24,6 +25,13 @@ public class Client {
 
 	public Client(){}
 
+	public int getLogin_id() {
+		return login_id;
+	}
+
+	public void setLogin_id(int login_id) {
+		this.login_id = login_id;
+	}
 
 	/**
 	 * @return the client_id
