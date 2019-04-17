@@ -1,68 +1,36 @@
 package csc_1_Software_Design.DataLayer;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class Login {
-    private static int login_id = 0;
+    private int login_id;
     private int client_id;
     private String username;
     private String password;
     private Boolean administrator;
 
-    public Login(Connection connection, int client_id, String username, String password) throws SQLException {
-        login_id++;
+    //user-Client
+    public Login( int client_id, String username, String password) throws SQLException {
         this.username = username;
         this.password = password;
         this.client_id = client_id;
 
-        String stmt = "INSERT INTO Login('login_id', 'username', 'password', 'administrator', 'client_id') " +
-                "values( ?, ?, ?, ?, ?)";
-        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-
-        preparedStatement.setInt(1, login_id);
-        preparedStatement.setString(2,username);
-        preparedStatement.setString(3, password);
-        preparedStatement.setBoolean(4,false);
-        preparedStatement.setInt(5,client_id);
-        preparedStatement.executeUpdate();
     }
-
-    public Login(Connection connection, int client_id, String username, String password, Boolean administrator) throws SQLException {
-        login_id++;
+    //admin-Client
+    public Login(int client_id, String username, String password, Boolean administrator) throws SQLException {
         this.username = username;
         this.password = password;
         this.administrator = administrator;
         this.client_id = client_id;
 
-        String stmt = "INSERT INTO Login('login_id', 'username', 'password', 'administrator', 'client_id') " +
-                "values( ?, ?, ?, ?, ?)";
-        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-
-        preparedStatement.setInt(1, login_id);
-        preparedStatement.setString(2,username);
-        preparedStatement.setString(3, password);
-        preparedStatement.setBoolean(4,administrator);
-        preparedStatement.setInt(5,client_id);
-        preparedStatement.executeUpdate();
     }
 
-    public Login(Connection connection, String username, String password, Boolean administrator) throws SQLException {
-        login_id++;
+    //admin
+    public Login(String username, String password, Boolean administrator) throws SQLException {
         this.username = username;
         this.password = password;
-        this.client_id = client_id;
+        this.administrator = administrator;
 
-        String stmt = "INSERT INTO Login('login_id', 'username', 'password', 'administrator') " +
-                "values( ?, ?, ?, ?, ?)";
-        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-
-        preparedStatement.setInt(1, login_id);
-        preparedStatement.setString(2,username);
-        preparedStatement.setString(3, password);
-        preparedStatement.setBoolean(4,administrator);
-        preparedStatement.executeUpdate();
     }
 
     public int getClient_id() {

@@ -6,7 +6,7 @@ public class Account {
 
 	protected int account_id;
 	protected int client_id;
-	protected int balance;
+	protected double balance;
 	protected Date createdDate;
 	protected String type;
 	
@@ -21,6 +21,10 @@ public class Account {
 
 	public int getClient_id() {
 		return client_id;
+	}
+
+	public void setClient_id(int client_id) {
+		this.client_id = client_id;
 	}
 
 	/**
@@ -40,14 +44,14 @@ public class Account {
 	/**
 	 * @return the balance
 	 */
-	public int getBalance() {
+	public double getBalance() {
 		return balance;
 	}
 
 	/**
 	 * @param balance the balance to set
 	 */
-	public void setBalance(int balance) {
+	public void setBalance(double balance) {
 		this.balance = balance;
 	}
 
