@@ -30,7 +30,7 @@ public class  MainOp
 //            clientOP.insertClient(connection.connection, c1);
 //            loginOP.createUserLogin(connection.connection, c1, "user", "user");
             Client cExist = clientOP.getClientByID(connection.connection, 7);
-            accountOP.createAccount(connection.connection, cExist, "College fund", date);
+            clientOP.deleteClient(connection.connection, cExist);
 
 
 

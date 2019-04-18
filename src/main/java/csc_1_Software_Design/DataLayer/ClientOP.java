@@ -89,26 +89,22 @@ public class ClientOP {
         }
 
         public void deleteClient(Connection connection, Client client) throws SQLException{
-            String stmt = "SET foreign_key_checks = 0; \n" +
-                    "DELETE FROM account where client_id = ?;\n" +
-                    "SET foreign_key_checks = 1;";
+            String stmt = "DELETE FROM account where client_id = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(stmt);
             preparedStatement.setInt(1, client.getClient_id());
             preparedStatement.executeUpdate();
 
-            String stmt1 = "SET foreign_key_checks = 0; \n" +
-                    "DELETE FROM login where CNP = ?;\n" +
-                    "SET foreign_key_checks = 1;";
+            String stmt1 = "DELETE FROM login where CNP = ?";
             PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
             preparedStatement1.setString(1, client.getCnp());
             preparedStatement1.executeUpdate();
 
-            String statement = "SET foreign_key_checks = 0; \n" +
-                    "DELETE FROM client where client_id = ?;\n" +
-                    "SET foreign_key_checks = 1;";
+            String statement = "DELETE FROM client where client_id = ?";
             PreparedStatement prepSt = connection.prepareStatement(statement);
             prepSt.setInt(1, client.getClient_id());
             prepSt.executeUpdate();
+
+            System.out.println("Client successfully deleted! and everything linked to the client!");
         }
 
         public void updateClient(Connection connection, Client client, String first_name, String last_name, String address, String cnp, String cni) throws SQLException{
