@@ -1,10 +1,11 @@
 package csc_1_Software_Design.DataLayer;
 
 import com.sun.org.apache.bcel.internal.generic.InstructionConstants;
+import csc_1_Software_Design.BusinessLayer.UserOp;
 
 import java.sql.*;
 
-public class ClientOP {
+public class ClientOP{
 
 
         public void insertClient(Connection con, Client client) throws SQLException{

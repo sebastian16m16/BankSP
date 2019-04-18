@@ -1,17 +1,19 @@
 package csc_1_Software_Design.DataLayer;
 
+import csc_1_Software_Design.BusinessLayer.UserOp;
+
 import java.sql.*;
 
-public class LoginOP {
+public class LoginOP{
 
-    public void createUserLogin(Connection connection, Client client, String username, String password) throws SQLException {
+    public void createUserLogin(Connection connection, String cnp, String username, String password) throws SQLException {
 
         String stmt = "INSERT INTO Login (username, password, administrator, CNP) VALUES (?, ?, ?, ?)";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setString(1,username);
         preparedStatement.setString(2, password);
         preparedStatement.setBoolean(3, false);
-        preparedStatement.setString(4, client.getCnp());
+        preparedStatement.setString(4, cnp);
         preparedStatement.executeUpdate();
 
         System.out.println("Login created!");
@@ -86,5 +88,38 @@ public class LoginOP {
         preparedStatement.setString(1, username);
         preparedStatement.executeUpdate();
         System.out.println("Login with username: " + username + " was removed!");
+    }
+
+    public boolean usernameExists(Connection connection, String username) throws SQLException{
+        String stmt = "Select * from Login where username = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, username);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        if(resultSet.next())
+            return true;
+        else
+            return false;
+    }
+
+    public boolean cnpExists(Connection connection, String cnp) throws SQLException{
+        String stmt = "Select * from login where cnp = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+
+        preparedStatement.setString(1,cnp);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        if(resultSet.next())
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isAdmin(Connection connection, String username) throws SQLException{
+        String stmt = "Select * FROM Login where username = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, username);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        return resultSet.getBoolean("administrator");
     }
 }
