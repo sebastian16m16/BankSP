@@ -6,6 +6,8 @@ import csc_1_Software_Design.DataLayer.LoginOP;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.sql.SQLException;
 
 public class CreateAdminLoginGUI extends JFrame{
@@ -18,10 +20,12 @@ public class CreateAdminLoginGUI extends JFrame{
     public CreateAdminLoginGUI(){
         setTitle("Create Admin Login");
         setSize(400, 800);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        final LoginGUI loginGUI = new LoginGUI();
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
-        add(createAdminLoginPanel);
 
+
+        add(createAdminLoginPanel);
 
 
         createAccountButton.addActionListener(new ActionListener() {
@@ -40,5 +44,8 @@ public class CreateAdminLoginGUI extends JFrame{
                 }
             }
         });
+
     }
+
+
 }

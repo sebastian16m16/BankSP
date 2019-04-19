@@ -18,6 +18,7 @@ public class LoginGUI extends JFrame{
     private JButton Login;
     private JButton createAccountButton;
     private JButton createAdminAccountButton;
+    private JPanel spacer;
 
 
     public LoginGUI() {
@@ -29,6 +30,8 @@ public class LoginGUI extends JFrame{
         add(loginPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        getRootPane().setDefaultButton(Login);
 
         Login.addActionListener(new ActionListener() {
             @Override

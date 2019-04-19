@@ -22,7 +22,7 @@ public class CreateUserAccountGUI extends JFrame{
         add(createUserLoginPanel);
         setTitle("Create User Login");
         setSize(400,800);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         final LoginGUI loginGUI = new LoginGUI();
 

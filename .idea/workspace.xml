@@ -2,14 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d640429-4a61-41b8-891c-f2b0b0289eb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,126 +35,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="494">
+              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#912#1611#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state relative-caret-position="90">
+              <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#addLoginIdToClient#0;class#LoginOP#0" />
-                <element signature="method#createAdminLogin#0;class#LoginOP#0" />
-                <element signature="method#getLoginByID#0;class#LoginOP#0" />
-                <element signature="method#updateUsername#0;class#LoginOP#0" />
-                <element signature="method#updatePassword#0;class#LoginOP#0" />
-                <element signature="method#deleteLogin#0;class#LoginOP#0" />
-                <element signature="method#usernameExists#0;class#LoginOP#0" />
-                <element signature="method#cnpExists#0;class#LoginOP#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/jdbc/result/ResultSetImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="774" selection-start-line="774" selection-end-line="774" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="1589" selection-start-line="1589" selection-end-line="1589" />
-              <folding>
-                <element signature="e#5560#5561#0" expanded="true" />
-                <element signature="e#5640#5641#0" expanded="true" />
-                <element signature="e#5707#5708#0" expanded="true" />
-                <element signature="e#5745#5746#0" expanded="true" />
-                <element signature="e#5898#5899#0" expanded="true" />
-                <element signature="e#5975#5976#0" expanded="true" />
-                <element signature="e#23097#23098#0" expanded="true" />
-                <element signature="e#23139#23140#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/conf/AbstractRuntimeProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
-              <folding>
-                <element signature="e#5277#5278#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/NativeSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="1265" selection-start-line="1265" selection-end-line="1265" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
+            <state relative-caret-position="323">
+              <caret line="24" column="56" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#871#1938#0" expanded="true" />
-                <element signature="e#1937#1938#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#618#809#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -178,19 +102,19 @@
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAccountGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAccountGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" />
       </list>
     </option>
   </component>
@@ -228,6 +152,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -312,7 +237,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -464,6 +388,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.28016195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -475,7 +400,7 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39851025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,7 +430,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32960895" />
       <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39851025" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -528,18 +453,6 @@
     <MESSAGE value="blue2" />
     <MESSAGE value="blue3" />
     <option name="LAST_COMMIT_MESSAGE" value="blue3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/App.java" />
@@ -658,19 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -692,39 +592,22 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#618#809#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="41" column="81" selection-start-line="41" selection-start-column="81" selection-end-line="41" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#871#1938#0" expanded="true" />
-            <element signature="e#1937#1938#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/NativeSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="21356">
           <caret line="1265" selection-start-line="1265" selection-end-line="1265" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.15/mysql-connector-java-8.0.15-sources.jar!/com/mysql/cj/conf/AbstractRuntimeProperty.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -760,29 +643,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#912#1611#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="121" column="29" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+        <state relative-caret-position="118">
+          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#addLoginIdToClient#0;class#LoginOP#0" />
@@ -796,6 +660,52 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
     </entry>
   </component>
   <component name="masterDetails">
