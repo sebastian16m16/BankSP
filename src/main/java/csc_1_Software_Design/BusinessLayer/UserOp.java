@@ -37,8 +37,8 @@ public class UserOp {
         accountOp.deleteAccountById(connection.connection, accountID);
     }
 
-    public void createUserLogin(Client client, String username, String password)throws SQLException{
-        loginOP.createUserLogin(connection.connection, client, username, password);
+    public void createUserLogin(String cnp, String username, String password)throws SQLException{
+        loginOP.createUserLogin(connection.connection, cnp, username, password);
     }
 
     public void updateUsername(Login login, String new_username) throws SQLException{

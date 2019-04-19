@@ -11,7 +11,7 @@ import java.sql.SQLException;
 
 public class LoginGUI extends JFrame{
 
-    DBConnection dbConnection = DBConnection.getConnection();
+    public DBConnection dbConnection = DBConnection.getConnection();
     private JPanel loginPanel;
     private JTextField USERNAMETextField;
     private JPasswordField PASSWORDPasswordField;
@@ -36,11 +36,21 @@ public class LoginGUI extends JFrame{
                 LoginOP loginOP = new LoginOP();
 
                 try {
-                    if(loginOP.isAdmin(dbConnection.connection, USERNAMETextField.getText())){
-                        AdminGUI adminGUI = new AdminGUI();
-                        setVisible(false);
-                        adminGUI.setVisible(true);
+
+                    if(loginOP.loginOK(dbConnection.connection, USERNAMETextField.getText(), PASSWORDPasswordField.getText())){
+                        if(loginOP.isAdmin(dbConnection.connection, USERNAMETextField.getText())){
+                            AdminGUI adminGUI = new AdminGUI();
+                            setVisible(false);
+                            adminGUI.setVisible(true);
+                        }else{
+                            UserGUI userGUI = new UserGUI();
+                            setVisible(false);
+                            userGUI.setVisible(true);
+                        }
+                    }else{
+                        JOptionPane.showMessageDialog(null, "Wrong username or password!");
                     }
+
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

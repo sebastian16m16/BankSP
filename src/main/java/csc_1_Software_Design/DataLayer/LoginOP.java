@@ -119,7 +119,29 @@ public class LoginOP{
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
         preparedStatement.setString(1, username);
         ResultSet resultSet = preparedStatement.executeQuery();
+        boolean admin = false;
 
-        return resultSet.getBoolean("administrator");
+        while(resultSet.next()){
+             admin = resultSet.getBoolean("administrator");
+        }
+
+        return admin;
+    }
+
+    public boolean loginOK(Connection connection, String username, String password) throws SQLException{
+        String stmt = "Select * from login where username = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+
+        preparedStatement.setString(1, username);
+
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        if(resultSet.next()){
+            if(resultSet.getString("password").equals(password))
+                return true;
+            else
+                return false;
+        }
+        return false;
     }
 }

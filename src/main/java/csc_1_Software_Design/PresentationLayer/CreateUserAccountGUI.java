@@ -1,6 +1,7 @@
 package csc_1_Software_Design.PresentationLayer;
 
 import csc_1_Software_Design.BusinessLayer.DBConnection;
+import csc_1_Software_Design.DataLayer.Login;
 import csc_1_Software_Design.DataLayer.LoginOP;
 
 import javax.swing.*;
@@ -14,7 +15,7 @@ public class CreateUserAccountGUI extends JFrame{
     private JButton createAccountButton;
     private JTextField cnpField;
     private JPasswordField passwordField;
-    DBConnection connection = DBConnection.getConnection();
+
 
     public CreateUserAccountGUI(){
 
@@ -22,7 +23,9 @@ public class CreateUserAccountGUI extends JFrame{
         setTitle("Create User Login");
         setSize(400,800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        LoginGUI loginGUI = new LoginGUI();
+        setLocationRelativeTo(null);
+        final LoginGUI loginGUI = new LoginGUI();
+
 
         createAccountButton.addActionListener(new ActionListener() {
             @Override
@@ -30,14 +33,21 @@ public class CreateUserAccountGUI extends JFrame{
                 LoginOP loginOP = new LoginOP();
 
                 try {
-                    if(loginOP.usernameExists(connection.connection, usernameField.getText())) {
+                    if(loginOP.usernameExists(loginGUI.dbConnection.connection, usernameField.getText())) {
                         JOptionPane.showMessageDialog(null, "Username already exists!");
-                    }else if(loginOP.cnpExists(connection.connection, cnpField.getText())){
+                    }else if(loginOP.cnpExists(loginGUI.dbConnection.connection, cnpField.getText())){
                         JOptionPane.showMessageDialog(null,"You are already registered");
                     }else{
-                        loginOP.createUserLogin(connection.connection, cnpField.getText(),usernameField.getText(),passwordField.getText());
+                        loginOP.createUserLogin(loginGUI.dbConnection.connection, cnpField.getText(),usernameField.getText(),passwordField.getText());
                         JOptionPane.showMessageDialog(null, "Login Created with\n" + "Username: " +usernameField.getText() +"\n" +
                                 "CNP: " + cnpField.getText() + "\n 0 errors");
+                    }
+                    try {
+                        wait(500);
+                        setVisible(false);
+                        loginGUI.setVisible(true);
+                    } catch (InterruptedException ex) {
+                        ex.printStackTrace();
                     }
 
                 } catch (SQLException ex) {
