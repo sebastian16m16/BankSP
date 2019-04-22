@@ -12,18 +12,16 @@ public class Client {
 	private String last_name;
 	private String address;
 	private int login_id;
+	private String cnpAdmin;
 
 
-	public Client(String cnp, String cni, String first_name, String last_name, String address) throws SQLException {
-		this.cnp = cnp;
-		this.cni = cni;
-		this.first_name = first_name;
-		this.last_name = last_name;
-		this.address = address;
-
+	public String getCnpAdmin() {
+		return cnpAdmin;
 	}
 
-	public Client(){}
+	public void setCnpAdmin(String cnpAdmin) {
+		this.cnpAdmin = cnpAdmin;
+	}
 
 	public int getLogin_id() {
 		return login_id;

@@ -15,6 +15,7 @@ public class CreateAdminLoginGUI extends JFrame{
     private JButton createAccountButton;
     private JPasswordField passwordField1;
     private JPanel createAdminLoginPanel;
+    private JButton backButton;
     final LoginGUI loginGUI = new LoginGUI();
 
     public CreateAdminLoginGUI(){
@@ -24,9 +25,16 @@ public class CreateAdminLoginGUI extends JFrame{
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
 
-
         add(createAdminLoginPanel);
 
+
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                loginGUI.setVisible(true);
+                setVisible(false);
+            }
+        });
 
         createAccountButton.addActionListener(new ActionListener() {
             @Override

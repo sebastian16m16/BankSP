@@ -9,7 +9,7 @@ public class ClientOP{
 
 
         public void insertClient(Connection con, Client client) throws SQLException{
-            String statement = "INSERT INTO client (CNP, CNI, First_name, Last_name, address) VALUES (?, ?, ?, ?, ?)";
+            String statement = "INSERT INTO client (CNP, CNI, First_name, Last_name, address, cnpAdmin) VALUES (?, ?, ?, ?, ?, ?)";
             PreparedStatement prepSt = con.prepareStatement(statement);
 
             prepSt.setString(1, client.getCnp());
@@ -17,6 +17,7 @@ public class ClientOP{
             prepSt.setString(3, client.getFirst_name());
             prepSt.setString(4, client.getLast_name());
             prepSt.setString(5, client.getAddress());
+            prepSt.setString(6, client.getCnpAdmin());
 
             prepSt.executeUpdate();
             System.out.println("Client created!");
@@ -35,7 +36,7 @@ public class ClientOP{
             ResultSet queryResult = prepSt.executeQuery();
 
 
-            if (queryResult.next()){
+            while (queryResult.next()){
                 //retrieve by column name
                 int id = queryResult.getInt("client_id");
                 String cnp = queryResult.getString("cnp");
@@ -68,20 +69,24 @@ public class ClientOP{
 
             String stmt = "Select * from client where cnp = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-
+            preparedStatement.setString(1, cnp);
             ResultSet resultSet = preparedStatement.executeQuery();
+            while(resultSet.next()) {
 
-            int client_id = resultSet.getInt("client_id");
-            String cni = resultSet.getString("cni");
-            String last_name = resultSet.getString("last_name");
-            String first_name = resultSet.getString("first_name");
-            String address = resultSet.getString("address");
+                int client_id = resultSet.getInt("client_id");
+                String cni = resultSet.getString("cni");
+                String last_name = resultSet.getString("last_name");
+                String first_name = resultSet.getString("first_name");
+                String address = resultSet.getString("address");
+                String cnp1 = resultSet.getString("cnp");
 
-            foundClient.setClient_id(client_id);
-            foundClient.setCni(cni);
-            foundClient.setLast_name(last_name);
-            foundClient.setFirst_name(first_name);
-            foundClient.setAddress(address);
+                foundClient.setClient_id(client_id);
+                foundClient.setCni(cni);
+                foundClient.setLast_name(last_name);
+                foundClient.setFirst_name(first_name);
+                foundClient.setAddress(address);
+                foundClient.setCnp(cnp1);
+            }
 
             System.out.println("Client found!");
             return foundClient;
@@ -89,41 +94,79 @@ public class ClientOP{
 
         }
 
-        public void deleteClient(Connection connection, Client client) throws SQLException{
-            String stmt = "DELETE FROM account where client_id = ?";
+        public void deleteClient(Connection connection, String cnp) throws SQLException{
+            String stmt = "DELETE FROM account where cnpAdmin = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-            preparedStatement.setInt(1, client.getClient_id());
+            preparedStatement.setString(1, cnp);
             preparedStatement.executeUpdate();
 
             String stmt1 = "DELETE FROM login where CNP = ?";
             PreparedStatement preparedStatement1 = connection.prepareStatement(stmt1);
-            preparedStatement1.setString(1, client.getCnp());
+            preparedStatement1.setString(1, cnp);
             preparedStatement1.executeUpdate();
 
-            String statement = "DELETE FROM client where client_id = ?";
+            String statement = "DELETE FROM client where cnp = ?";
             PreparedStatement prepSt = connection.prepareStatement(statement);
-            prepSt.setInt(1, client.getClient_id());
+            prepSt.setString(1, cnp);
             prepSt.executeUpdate();
 
             System.out.println("Client successfully deleted! and everything linked to the client!");
         }
 
-        public void updateClient(Connection connection, Client client, String first_name, String last_name, String address, String cnp, String cni) throws SQLException{
+        public void updateClient(Connection connection, String cnp, String first_name, String last_name, String address, String cni) throws SQLException{
 
             System.out.println("UPDATEing ...");
-            String statement = "UPDATE client SET first_name =?, last_name=?, cnp=?, cni=?, address=? where client_id =?";
+            String statement = "UPDATE client SET first_name =?, last_name=?, cni=?, address=? where cnp =?";
             PreparedStatement prepSt = connection.prepareStatement(statement);
                prepSt.setString(1, first_name);
                prepSt.setString(2, last_name);
-               prepSt.setString(3, cnp);
-               prepSt.setString(4, cni);
-               prepSt.setString(5, address);
-               prepSt.setInt(6, client.getClient_id());
+               prepSt.setString(3, cni);
+               prepSt.setString(4, address);
+               prepSt.setString(5, cnp);
             prepSt.executeUpdate();
 
-            System.out.println("Client with id: " + client.getClient_id() + " has been updated!");
+            System.out.println("Client with cnp: " + cnp + " has been updated!");
         }
 
+        public boolean existsClientByCNP(Connection connection, String cnp) throws SQLException{
+            String stmt = "Select * from Client where cnp = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+            preparedStatement.setString(1, cnp);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            boolean found = false;
 
+            while (resultSet.next()){
+                found = true;
+            }
+            return found;
+        }
+
+        public boolean existsClientByID(Connection connection, int ID) throws SQLException{
+        String stmt = "Select * from Client where client_id = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setInt(1, ID);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        boolean found = false;
+
+        while (resultSet.next()){
+            found = true;
+        }
+        return found;
+    }
+
+        public String getClientCNPfromID(Connection connection, int id) throws SQLException{
+            String cnp = "";
+
+            String stmt = "Select CNP from client where client_id =?";
+            PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+            preparedStatement.setInt(1, id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()){
+                cnp = resultSet.getString("CNP");
+            }
+            return cnp;
+        }
 }
 

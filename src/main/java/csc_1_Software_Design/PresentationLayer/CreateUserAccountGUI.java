@@ -15,6 +15,7 @@ public class CreateUserAccountGUI extends JFrame{
     private JButton createAccountButton;
     private JTextField cnpField;
     private JPasswordField passwordField;
+    private JButton backButton;
 
 
     public CreateUserAccountGUI(){
@@ -24,8 +25,16 @@ public class CreateUserAccountGUI extends JFrame{
         setSize(400,800);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
+        getRootPane().setDefaultButton(createAccountButton);
         final LoginGUI loginGUI = new LoginGUI();
 
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                loginGUI.setVisible(true);
+                setVisible(false);
+            }
+        });
 
         createAccountButton.addActionListener(new ActionListener() {
             @Override
@@ -42,13 +51,10 @@ public class CreateUserAccountGUI extends JFrame{
                         JOptionPane.showMessageDialog(null, "Login Created with\n" + "Username: " +usernameField.getText() +"\n" +
                                 "CNP: " + cnpField.getText() + "\n 0 errors");
                     }
-                    try {
-                        wait(500);
+
                         setVisible(false);
                         loginGUI.setVisible(true);
-                    } catch (InterruptedException ex) {
-                        ex.printStackTrace();
-                    }
+
 
                 } catch (SQLException ex) {
                     ex.printStackTrace();

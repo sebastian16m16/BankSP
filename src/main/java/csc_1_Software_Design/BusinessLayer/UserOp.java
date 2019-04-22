@@ -12,13 +12,16 @@ public class UserOp {
     AccountOP accountOp = new AccountOP();
     ClientOP clientOP = new ClientOP();
     LoginOP loginOP = new LoginOP();
+    String cnp;
+    int id;
+
+    public UserOp(String cnp){
+        this.cnp = cnp;
+    }
+
 
     public Account getAccountByClientID(int id) throws SQLException {
        return accountOp.getAccountByID(connection.connection, id);
-    }
-
-    public Account[] getAccountsByClientID(int id) throws SQLException{
-        return accountOp.getAccountsByClient_id(connection.connection, id);
     }
 
     public void topUp(double amount, int accountID) throws SQLException{
@@ -49,7 +52,9 @@ public class UserOp {
         loginOP.updatePassword(connection.connection, login, new_password);
     }
 
-    public Client getClientByCNP(String cnp) throws SQLException{
-        return clientOP.getClientByCNP(connection.connection, cnp);
+    public Client getClientByCNP() throws SQLException{
+        Client client = clientOP.getClientByCNP(connection.connection, cnp);
+        this.id = client.getClient_id();
+        return client;
     }
 }

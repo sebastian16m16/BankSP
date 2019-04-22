@@ -5,26 +5,27 @@ import java.sql.Date;
 public class Account {
 
 	protected int account_id;
-	protected int client_id;
 	protected double balance;
-	protected Date createdDate;
+	protected String cnpAdmin;
 	protected String type;
-	
-	
-//	public Account(int account_id, int client_id, Date createdDate, String type, int initialDeposit) {
-//		this.account_id = account_id;
-//		this.createdDate = createdDate;
-//		this.type = type;
-//		this.balance = initialDeposit;
-//		this.client_id = client_id;
-//	}
+	protected Date createdDate;
 
-	public int getClient_id() {
-		return client_id;
+	public Account(int id, double balance, String cnpAdmin, String type, Date createdDate){
+		this.account_id = id;
+		this.balance = balance;
+		this.cnpAdmin = cnpAdmin;
+		this.type = type;
+		this.createdDate = createdDate;
 	}
 
-	public void setClient_id(int client_id) {
-		this.client_id = client_id;
+	public Account(){}
+
+	public String getCnpAdmin() {
+		return cnpAdmin;
+	}
+
+	public void setCnpAdmin(String cnpAdmin) {
+		this.cnpAdmin = cnpAdmin;
 	}
 
 	/**
