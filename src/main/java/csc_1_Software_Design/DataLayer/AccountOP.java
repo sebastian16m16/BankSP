@@ -42,35 +42,38 @@ public class AccountOP {
         preparedStatement.executeUpdate();
     }
 
-    public String transfer(Connection connection, Account sender, Account receiver, double amount) throws SQLException{
+    public String transferMoney(Connection connection, int sender_id, int receiver_id, double amount) throws SQLException{
 
         //Check the balance of the sender account
-        String checkBalance = "SELECT Balance FROM Account WHERE cnpAdmin = ? AND Account_id = ? AND type = 'RO'";
+        String checkBalance = "SELECT Balance FROM Account WHERE Account_id = ?";
         PreparedStatement check = connection.prepareStatement(checkBalance);
-        check.setString(1, sender.getCnpAdmin());
-        check.setInt(2, sender.getAccount_id());
+        check.setInt(1, sender_id);
         ResultSet qResult = check.executeQuery();
+        double balance = 0;
+        while(qResult.next()) {
 
-        int balance = qResult.getInt("Balance");
+           balance = qResult.getDouble("Balance");
 
+        }
         //Check to see if there are enough money on the sender account
         if(balance > amount){
 
             // Send money
-            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE cnpAdmin = ? AND Account_id = ? AND type = 'RO'";
-            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE cnpAdmin = ? AND Account_id = ? AND type = 'RO'";
+            String stmt = "UPDATE Account SET Balance = Balance + ? WHERE Account_id = ? ";
+            String stmt2 = "UPDATE Account SET Balance = Balance - ? WHERE Account_id = ?";
 
             PreparedStatement prepST1 = connection.prepareStatement(stmt);
             PreparedStatement prepSt2 = connection.prepareStatement(stmt2);
 
 
             prepST1.setDouble(1,  amount);
-            prepST1.setString(2, receiver.getCnpAdmin());
-            prepST1.setInt(3, receiver.getAccount_id());
+            prepST1.setInt(2, receiver_id);
 
             prepSt2.setDouble(1, amount);
-            prepSt2.setString(2, sender.getCnpAdmin());
-            prepSt2.setInt(3, sender.getAccount_id());
+            prepSt2.setInt(2, sender_id);
+
+            prepST1.executeUpdate();
+            prepSt2.executeUpdate();
 
             return "The transfer was successful!";
         }else
@@ -129,6 +132,20 @@ public class AccountOP {
         return type;
     }
 
+    public int getAccountIDbyType(Connection connection, String type, String cnp) throws SQLException{
+        String stmt = "Select account_id from account where type = ? and cnpAdmin = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, type);
+        preparedStatement.setString(2, cnp);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        int id = 0;
+
+        while (resultSet.next()){
+            id = resultSet.getInt("account_id");
+        }
+        return id;
+    }
+
     public String getAccountCNPfromAccountID(Connection connection, int id) throws SQLException{
         String stmt = "Select cnpAdmin from account where account_id =?";
         PreparedStatement preparedStatement = connection.prepareStatement(stmt);
@@ -158,6 +175,21 @@ public class AccountOP {
         }
 
         return types;
+    }
+
+    public double getBalanceOfAccountByTypeAndCNP(Connection connection, String type, String cnp) throws SQLException{
+        String stmt = "Select balance from account where type = ? and cnpAdmin = ?";
+        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+        preparedStatement.setString(1, type);
+        preparedStatement.setString(2, cnp);
+        ResultSet resultSet = preparedStatement.executeQuery();
+
+        double balance = 0;
+
+        while(resultSet.next()){
+            balance = resultSet.getDouble("balance");
+        }
+        return balance;
     }
 
     public void transferAllFromOneTypeToAnother(Connection connection, String main, String receiver) throws SQLException{

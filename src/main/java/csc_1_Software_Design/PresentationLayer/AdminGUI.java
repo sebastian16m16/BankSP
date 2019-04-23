@@ -30,6 +30,7 @@ public class AdminGUI extends JFrame{
     private JRadioButton CNPRadioButton;
     private JButton createAccountButton;
     private JButton updateBtn;
+    private JButton backToLoginButton;
 
     public AdminGUI(){
         setTitle("Logged in as Admin");
@@ -442,6 +443,16 @@ public class AdminGUI extends JFrame{
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }
+            }
+        });
+
+
+        backToLoginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LoginGUI loginGUI = new LoginGUI();
+                loginGUI.setVisible(true);
+                setVisible(false);
             }
         });
 
