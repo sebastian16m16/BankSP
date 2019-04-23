@@ -7,6 +7,21 @@ import java.sql.*;
 
 public class ClientOP{
 
+        public String getFullClientName(Connection connection, String cnp) throws SQLException{
+            String stmt = "Select first_name, last_name from client where cnp = ?";
+            PreparedStatement preparedStatement = connection.prepareStatement(stmt);
+            preparedStatement.setString(1, cnp);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            String first_name = "";
+            String last_name = "";
+            while(resultSet.next()){
+                first_name = resultSet.getString("First_name");
+                last_name = resultSet.getString("last_name");
+            }
+
+            return last_name + " " +first_name;
+
+        }
 
         public void insertClient(Connection con, Client client) throws SQLException{
             String statement = "INSERT INTO client (CNP, CNI, First_name, Last_name, address, cnpAdmin) VALUES (?, ?, ?, ?, ?, ?)";

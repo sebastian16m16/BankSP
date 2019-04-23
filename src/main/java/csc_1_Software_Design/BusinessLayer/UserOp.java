@@ -13,12 +13,17 @@ public class UserOp {
     ClientOP clientOP = new ClientOP();
     LoginOP loginOP = new LoginOP();
     String cnp;
+    String first_name;
+    String last_name;
     int id;
 
     public UserOp(String cnp){
         this.cnp = cnp;
     }
 
+    public String getFullClientName(String cnp) throws SQLException{
+        return clientOP.getFullClientName(connection.connection, cnp);
+    }
 
     public Account getAccountByClientID(int id) throws SQLException {
        return accountOp.getAccountByID(connection.connection, id);
@@ -42,14 +47,6 @@ public class UserOp {
 
     public void createUserLogin(String cnp, String username, String password)throws SQLException{
         loginOP.createUserLogin(connection.connection, cnp, username, password);
-    }
-
-    public void updateUsername(Login login, String new_username) throws SQLException{
-        loginOP.updateUsername(connection.connection, login,new_username);
-    }
-
-    public void updatePassword(Login login, String new_password) throws SQLException{
-        loginOP.updatePassword(connection.connection, login, new_password);
     }
 
     public Client getClientByCNP() throws SQLException{

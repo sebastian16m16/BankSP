@@ -46,7 +46,8 @@ public class LoginGUI extends JFrame{
                             setVisible(false);
                             adminGUI.setVisible(true);
                         }else{
-                            UserGUI userGUI = new UserGUI();
+
+                            UserGUI userGUI = new UserGUI(loginOP.getCNPfromLogin(dbConnection.connection, USERNAMETextField.getText()));
                             setVisible(false);
                             userGUI.setVisible(true);
                         }

@@ -44,7 +44,7 @@ public class CreateUserAccountGUI extends JFrame{
                 try {
                     if(loginOP.usernameExists(loginGUI.dbConnection.connection, usernameField.getText())) {
                         JOptionPane.showMessageDialog(null, "Username already exists!");
-                    }else if(loginOP.cnpExists(loginGUI.dbConnection.connection, cnpField.getText())){
+                    }else if(loginOP.existsLoginByCNP(loginGUI.dbConnection.connection, cnpField.getText())){
                         JOptionPane.showMessageDialog(null,"You are already registered");
                     }else{
                         loginOP.createUserLogin(loginGUI.dbConnection.connection, cnpField.getText(),usernameField.getText(),passwordField.getText());

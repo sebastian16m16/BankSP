@@ -105,4 +105,36 @@ public class AdminOp {
     public String getClientCNPByID(int id) throws SQLException{
 	    return clientOP.getClientCNPfromID(connection.connection, id);
     }
+
+    public boolean existsLoginByCNP(String cnp) throws SQLException{
+	    return loginOP.existsLoginByCNP(connection.connection, cnp);
+    }
+
+    public boolean existsLoginByID(int id) throws SQLException{
+	    return loginOP.existsLoginByID(connection.connection, id);
+    }
+
+    public Login getLoginByCNP(String cnp) throws SQLException{
+	    return loginOP.getLoginByCNP(connection.connection, cnp);
+    }
+
+    public void updateUsernameByCNP(String newUsername, String cnp) throws SQLException{
+	    loginOP.updateUsernameByCNP(connection.connection, newUsername, cnp);
+    }
+
+    public void updatePasswordByCNP(String newPassword, String cnp) throws SQLException{
+	    loginOP.updatePasswordByCNP(connection.connection, newPassword, cnp);
+    }
+
+    public void updateUsernameByID(String newUsername, int id) throws SQLException{
+	    loginOP.updateUsernameByID(connection.connection, newUsername, id);
+    }
+
+    public void updatePasswordByID(String newPassword, int id) throws SQLException{
+	    loginOP.updatePasswordByID(connection.connection, newPassword, id);
+    }
+
+    public void updateAccountType(int id, String newType) throws SQLException{
+	    accountOp.updateAccountType(connection.connection, id, newType);
+    }
 }

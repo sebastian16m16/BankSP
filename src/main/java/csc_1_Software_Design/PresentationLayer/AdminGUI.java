@@ -4,6 +4,7 @@ import com.sun.xml.internal.bind.v2.model.core.ID;
 import csc_1_Software_Design.BusinessLayer.AdminOp;
 import csc_1_Software_Design.DataLayer.Account;
 import csc_1_Software_Design.DataLayer.Client;
+import csc_1_Software_Design.DataLayer.Login;
 import csc_1_Software_Design.PresentationLayer.AdminExtendFrames.CreateClientGUI;
 import csc_1_Software_Design.PresentationLayer.AdminExtendFrames.CreateMoneyAccountGUI;
 import csc_1_Software_Design.PresentationLayer.AdminExtendFrames.UpdateClientGUI;
@@ -214,6 +215,62 @@ public class AdminGUI extends JFrame{
                         ex.printStackTrace();
                     }
                 }
+                //Search Logins
+                else if(comboBox1.getSelectedIndex() == 2 && IDRadioButton.isSelected()){
+
+                    Object[] loginInfo = {"Login_ID", "Username", "Password", "Administrator", "CNP"};
+                    Object[] row = new Object[5];
+                    tableModel.setRowCount(0);
+                    tableModel.setColumnIdentifiers(loginInfo);
+                    resultsTable.setModel(tableModel);
+
+                    try {
+                        if(adminOp.existsLoginByID(Integer.parseInt(textField1.getText()))){
+                            Login login = adminOp.getLoginByID(Integer.parseInt(textField1.getText()));
+
+                            row[0] = login.getLogin_id();
+                            row[1] = login.getUsername();
+                            row[2] = login.getPassword();
+                            row[3] = login.getAdministrator();
+                            row[4] = login.getCnp();
+
+                            tableModel.addRow(row);
+
+                        }else
+                            JOptionPane.showMessageDialog(null, "Login not found!");
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                else if(comboBox1.getSelectedIndex() == 2 && CNPRadioButton.isSelected()){
+
+                    try {
+
+                        Object[] loginInfo = {"Login_ID", "Username", "Password", "Administrator", "CNP"};
+                        Object[] row = new Object[5];
+                        tableModel.setRowCount(0);
+                        tableModel.setColumnIdentifiers(loginInfo);
+                        resultsTable.setModel(tableModel);
+
+
+                        if(adminOp.existsLoginByCNP(textField1.getText())){
+
+                          Login login = adminOp.getLoginByCNP(textField1.getText());
+
+                            row[0] = login.getLogin_id();
+                            row[1] = login.getUsername();
+                            row[2] = login.getPassword();
+                            row[3] = login.getAdministrator();
+                            row[4] = login.getCnp();
+
+                            tableModel.addRow(row);
+
+                        }else
+                            JOptionPane.showMessageDialog(null, "Login not found!");
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
+                    }
+                }
             }
         });
 
@@ -269,13 +326,14 @@ public class AdminGUI extends JFrame{
                                         "NO");
                                 if (response == "Yes" && adminOp.getBalanceFromAccountByID(accountID) > 0){
                                     Object response2 = JOptionPane.showInputDialog(null,
-                                            "Where do you want to transfer the remaining money from this account?", "DELETE ALERT!",
-                                            JOptionPane.QUESTION_MESSAGE, null, adminOp.getTypesOfAccountsFromClient(adminOp.getAccountCNPbyID(accountID), adminOp.getAccountTypeByID(accountID)),
-                                            adminOp.getTypesOfAccountsFromClient(adminOp.getAccountCNPbyID(accountID), adminOp.getAccountTypeByID(accountID))[0]);
+                                            "There are still money on this account!\n Are you sure?", "DELETE ALERT!",
+                                            JOptionPane.QUESTION_MESSAGE,null, new String[]{"Yes", "NO"},
+                                            "NO");
+                                    if(response2 == "Yes"){
+                                        adminOp.deleteAccountByID(accountID);
+                                        JOptionPane.showMessageDialog(null, "Account deleted!");
+                                    }
 
-                                    adminOp.transferAllFromOneTypeToAnother(adminOp.getAccountTypeByID(accountID), response2.toString());
-                                    adminOp.deleteAccountByID(accountID);
-                                    JOptionPane.showMessageDialog(null, "Account deleted!");
                                 }else if(response == "Yes" && adminOp.getBalanceFromAccountByID(accountID) == 0) {
                                     adminOp.deleteAccountByID(accountID);
                                     JOptionPane.showMessageDialog(null, "Account deleted!");
@@ -299,7 +357,7 @@ public class AdminGUI extends JFrame{
                                         adminOp.deleteAccountByID(accountID);
                                         JOptionPane.showMessageDialog(null, "Account deleted!");
 
-                                    }else{
+                                    }else if(response3 == "Yes" && adminOp.getBalanceFromAccountByID(accountID) == 0){
                                         adminOp.deleteAccountByID(accountID);
                                         JOptionPane.showMessageDialog(null, "Account Deleted!");
                                     }
@@ -317,7 +375,7 @@ public class AdminGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    if (IDRadioButton.isSelected()) {
+                    if (IDRadioButton.isSelected() && comboBox1.getSelectedIndex()==0) {
                         if (adminOp.existsClientByID(Integer.parseInt(textField1.getText()))) {
                             UpdateClientGUI updateClientGUI = new UpdateClientGUI(Integer.parseInt(textField1.getText()));
                             updateClientGUI.setVisible(true);
@@ -325,7 +383,7 @@ public class AdminGUI extends JFrame{
                         } else
                             JOptionPane.showMessageDialog(null, "The client does not EXIST!");
 
-                    } else if (CNPRadioButton.isSelected()) {
+                    } else if (CNPRadioButton.isSelected() && comboBox1.getSelectedIndex() == 0) {
                         if (adminOp.existsClientByCNP(textField1.getText())) {
                             UpdateClientGUI updateClientGUI = new UpdateClientGUI(textField1.getText());
                             updateClientGUI.setVisible(true);
@@ -333,8 +391,54 @@ public class AdminGUI extends JFrame{
                         } else
                             JOptionPane.showMessageDialog(null, "The client does not EXIST!");
 
-                    } else
+                    } else if (textField1.getText() == null && comboBox1.getSelectedIndex() == 0)
                         JOptionPane.showMessageDialog(null, "Enter an ID or a CNP in the text area!");
+                    //Modify accounts
+                    else if(comboBox1.getSelectedIndex()==1){
+                        int id = Integer.parseInt(JOptionPane.showInputDialog("Enter the ID of the account you want to update!"));
+                        adminOp.updateAccountType(id, JOptionPane.showInputDialog("Enter the new type for the account!"));
+                    }
+                    else if(comboBox1.getSelectedIndex() == 2 && IDRadioButton.isSelected()){
+                       int id = Integer.parseInt(JOptionPane.showInputDialog("Enter the ID of the login you want to update!"));
+                       if(adminOp.existsLoginByID(id)) {
+                           Object response1 = JOptionPane.showInputDialog(null,
+                                   "What do you want to update?", "Update ALERT!",
+                                   JOptionPane.QUESTION_MESSAGE, null, new String[]{"Username", "Password", "Both"},
+                                   "Username");
+                           if (response1 == "Username") {
+                               adminOp.updateUsernameByID(JOptionPane.showInputDialog("Enter new Username!"), id);
+                               JOptionPane.showMessageDialog(null, "Username Updated!");
+                           } else if (response1 == "Password") {
+                               adminOp.updatePasswordByID(JOptionPane.showInputDialog("Enter new Password!"), id);
+                               JOptionPane.showMessageDialog(null, "Password Updated!");
+                           } else if (response1 == "Both") {
+                               adminOp.updateUsernameByID(JOptionPane.showInputDialog("Enter new Username!"), id);
+                               adminOp.updatePasswordByID(JOptionPane.showInputDialog("Enter new Password!"), id);
+                               JOptionPane.showMessageDialog(null, "Username and password Updated!");
+                           }
+                       }else
+                           JOptionPane.showMessageDialog(null, "The login with id: " + id + " does't exist!");
+                    }else if(comboBox1.getSelectedIndex() == 2 && CNPRadioButton.isSelected()){
+                        String cnp = (JOptionPane.showInputDialog(null, "Enter the CNP of the login you want to update!"));
+                        if(adminOp.existsLoginByCNP(cnp)){
+                            Object response1 = JOptionPane.showInputDialog(null,
+                                    "What do you want to update?", "Update ALERT!",
+                                    JOptionPane.QUESTION_MESSAGE, null, new String[]{"Username", "Password", "Both"},
+                                    "Username");
+                            if (response1 == "Username") {
+                                adminOp.updateUsernameByCNP(JOptionPane.showInputDialog("Enter new Username!"), cnp);
+                                JOptionPane.showMessageDialog(null, "Username Updated!");
+                            } else if (response1 == "Password") {
+                                adminOp.updatePasswordByCNP(JOptionPane.showInputDialog("Enter new Password!"), cnp);
+                                JOptionPane.showMessageDialog(null, "Password Updated!");
+                            } else if (response1 == "Both") {
+                                adminOp.updateUsernameByCNP(JOptionPane.showInputDialog("Enter new Username!"), cnp);
+                                adminOp.updatePasswordByCNP(JOptionPane.showInputDialog("Enter new Password!"), cnp);
+                                JOptionPane.showMessageDialog(null, "Username and password Updated!");
+                            }
+                        }else
+                            JOptionPane.showMessageDialog(null, "The login with CNP: " + cnp + " doesn't exist!");
+                    }
                 } catch (SQLException ex) {
                     ex.printStackTrace();
                 }

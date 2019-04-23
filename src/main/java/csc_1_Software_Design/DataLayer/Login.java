@@ -4,42 +4,20 @@ import java.sql.SQLException;
 
 public class Login {
     private int login_id;
-    private int client_id;
+    private String cnp;
     private String username;
     private String password;
     private Boolean administrator;
 
-    public Login(){}
+
     //user-Client
-    public Login( int client_id, String username, String password) throws SQLException {
-        this.username = username;
-        this.password = password;
-        this.client_id = client_id;
 
-    }
-    //admin-Client
-    public Login(int client_id, String username, String password, Boolean administrator) throws SQLException {
-        this.username = username;
-        this.password = password;
-        this.administrator = administrator;
-        this.client_id = client_id;
-
+    public void setCnp(String cnp) {
+        this.cnp = cnp;
     }
 
-    //admin
-    public Login(String username, String password, Boolean administrator) throws SQLException {
-        this.username = username;
-        this.password = password;
-        this.administrator = administrator;
-
-    }
-
-    public void setClient_id(int client_id) {
-        this.client_id = client_id;
-    }
-
-    public int getClient_id() {
-        return client_id;
+    public String getCnp() {
+        return cnp;
     }
 
     /**
