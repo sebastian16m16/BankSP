@@ -24,6 +24,7 @@ public class CreateMoneyAccountUserGUI extends JFrame{
     private JPanel createAccountPanelUser;
 
     public CreateMoneyAccountUserGUI(final String cnp) throws SQLException {
+        super();
         this.cnp = cnp;
 
         setSize(300,500);

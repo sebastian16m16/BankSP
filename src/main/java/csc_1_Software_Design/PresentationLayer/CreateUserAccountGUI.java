@@ -19,6 +19,7 @@ public class CreateUserAccountGUI extends JFrame{
 
 
     public CreateUserAccountGUI(){
+        super();
 
         add(createUserLoginPanel);
         setTitle("Create User Login");

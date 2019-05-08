@@ -51,6 +51,7 @@ public class UserGUI extends JFrame {
     }
 
     public UserGUI(final String cnp) throws SQLException {
+        super();
         this.cnp = cnp;
         final UserOp userOp = new UserOp();
 

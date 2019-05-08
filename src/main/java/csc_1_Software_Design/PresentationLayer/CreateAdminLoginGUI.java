@@ -19,6 +19,7 @@ public class CreateAdminLoginGUI extends JFrame{
     final LoginGUI loginGUI = new LoginGUI();
 
     public CreateAdminLoginGUI(){
+        super();
         setTitle("Create Admin Login");
         setSize(400, 800);
         final LoginGUI loginGUI = new LoginGUI();

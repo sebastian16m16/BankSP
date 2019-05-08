@@ -22,6 +22,7 @@ public class UpdateClientUserGUI extends JFrame{
     String cni;
 
     public UpdateClientUserGUI(Client thisClient){
+        super();
         this.cnp = thisClient.getCnp();
         this.cni = thisClient.getCni();
 

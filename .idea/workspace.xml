@@ -1,27 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BankAssignment:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9d640429-4a61-41b8-891c-f2b0b0289eb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BankAssignment_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BankAssignment.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/AdminOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/AdminOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/DBConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/DBConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/UserOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/BusinessLayer/UserOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Account.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/AccountOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/AccountOP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/ClientOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/ClientOP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/Login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/LoginOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/DataLayer/LoginOP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/AdminGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/LoginGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI$8.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/csc_1_Software_Design/PresentationLayer/UserGUI.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/csc_1_Software_Design/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/csc_1_Software_Design/AppTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,59 +99,21 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="454" column="32" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#22670#22864#0" expanded="true" />
-                <element signature="e#22863#22864#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="114">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="75" selection-end-column="17" />
+            <state relative-caret-position="37">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="method#createAccount#0;class#AccountOP#0" />
-                <element signature="method#topUp#0;class#AccountOP#0" />
-                <element signature="method#updateAccountType#0;class#AccountOP#0" />
-                <element signature="method#deleteAccountById#0;class#AccountOP#0" />
-                <element signature="method#numberOfAccountsOnClient#0;class#AccountOP#0" />
-                <element signature="method#existsAccountByID#0;class#AccountOP#0" />
-                <element signature="method#getAccountTypeByID#0;class#AccountOP#0" />
-                <element signature="method#getAccountIDbyType#0;class#AccountOP#0" />
-                <element signature="method#getAccountCNPfromAccountID#0;class#AccountOP#0" />
-                <element signature="method#getTypesOfAccountsFromClient#0;class#AccountOP#0" />
-                <element signature="method#getBalanceOfAccountByTypeAndCNP#0;class#AccountOP#0" />
-                <element signature="method#transferAllFromOneTypeToAnother#0;class#AccountOP#0" />
-                <element signature="method#existsAccountByTypeFromCNP#0;class#AccountOP#0" />
-                <element signature="method#existsAccountByCNP#0;class#AccountOP#0" />
-                <element signature="method#getAccountByID#0;class#AccountOP#0" />
-                <element signature="method#getAccountByCNP#0;class#AccountOP#0" />
-                <element signature="method#getBalanceOfAccountByID#0;class#AccountOP#0" />
               </folding>
             </state>
           </provider>
@@ -98,101 +122,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+            <state relative-caret-position="215">
+              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1277#1278#0" expanded="true" />
-                <element signature="e#1303#1304#0" expanded="true" />
-                <element signature="e#3039#3427#0" expanded="true" />
-                <element signature="e#3426#3427#0" expanded="true" />
-                <element signature="e#3598#5524#0" expanded="true" />
-                <element signature="e#5523#5524#0" expanded="true" />
-                <element signature="e#5779#6085#0" expanded="true" />
-                <element signature="e#6084#6085#0" expanded="true" />
-                <element signature="e#6155#7184#0" expanded="true" />
-                <element signature="e#7183#7184#0" expanded="true" />
-                <element signature="e#7678#8388#0" expanded="true" />
-                <element signature="e#8387#8388#0" expanded="true" />
-                <element signature="e#9536#9717#0" expanded="true" />
-                <element signature="e#9716#9717#0" expanded="true" />
-                <element signature="e#9940#10134#0" expanded="true" />
-                <element signature="e#10133#10134#0" expanded="true" />
-                <element signature="e#10655#12313#0" expanded="true" />
-                <element signature="e#12312#12313#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="60" column="4" lean-forward="true" selection-start-line="60" selection-start-column="4" selection-end-line="62" selection-end-column="5" />
-              <folding>
-                <element signature="method#insertClient#0;class#AdminOp#0" />
-                <element signature="method#getClientByID#0;class#AdminOp#0" />
-                <element signature="method#getClientByCNP#0;class#AdminOp#0" />
-                <element signature="method#deleteClient#0;class#AdminOp#0" />
-                <element signature="method#createAdminLogin#0;class#AdminOp#0" />
-                <element signature="method#getLoginByID#0;class#AdminOp#0" />
-                <element signature="method#existsClientByCNP#0;class#AdminOp#0" />
-                <element signature="method#existsClientByID#0;class#AdminOp#0" />
-                <element signature="method#numberOfMoneyAccountsOnCLIENT#0;class#AdminOp#0" />
-                <element signature="method#deleteAccountByID#0;class#AdminOp#0" />
-                <element signature="method#getAccountTypeByID#0;class#AdminOp#0" />
-                <element signature="method#getAccountCNPbyID#0;class#AdminOp#0" />
-                <element signature="method#getTypesOfAccountsFromClient#0;class#AdminOp#0" />
-                <element signature="method#transferAllFromOneTypeToAnother#0;class#AdminOp#0" />
-                <element signature="method#getAccountByID#0;class#AdminOp#0" />
-                <element signature="method#getAccountByCNP#0;class#AdminOp#0" />
-                <element signature="method#existsAccountByTypeFromCNP#0;class#AdminOp#0" />
-                <element signature="method#existsAccountByCNP#0;class#AdminOp#0" />
-                <element signature="method#getBalanceFromAccountByID#0;class#AdminOp#0" />
-                <element signature="method#getClientCNPByID#0;class#AdminOp#0" />
-                <element signature="method#existsLoginByCNP#0;class#AdminOp#0" />
-                <element signature="method#existsLoginByID#0;class#AdminOp#0" />
-                <element signature="method#getLoginByCNP#0;class#AdminOp#0" />
-                <element signature="method#updateUsernameByID#0;class#AdminOp#0" />
-                <element signature="method#updatePasswordByID#0;class#AdminOp#0" />
-                <element signature="method#updateAccountType#0;class#AdminOp#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
-              <folding>
-                <element signature="method#getFullClientName#0;class#UserOp#0" />
-                <element signature="method#getAccountCNPFromAccountID#0;class#UserOp#0" />
-                <element signature="method#numberOfMoneyAccountsOnCLIENT#0;class#UserOp#0" />
-                <element signature="method#getTypesOfAccountsFromClient#0;class#UserOp#0" />
-                <element signature="method#getAccountIDbyType#0;class#UserOp#0" />
-                <element signature="method#createAccount#0;class#UserOp#0" />
-                <element signature="method#getClientAccount#0;class#UserOp#0" />
-                <element signature="method#getAccountByClientID#0;class#UserOp#0" />
-                <element signature="method#topUp#0;class#UserOp#0" />
-                <element signature="method#updateAccountType#0;class#UserOp#0" />
-                <element signature="method#deleteAccount#0;class#UserOp#0" />
-                <element signature="method#createUserLogin#0;class#UserOp#0" />
-                <element signature="method#getClientByCNP#0;class#UserOp#0" />
-                <element signature="method#getBalanceOfAccountByTypeAndCNP#0;class#UserOp#0" />
-                <element signature="method#transferAllFromOneTypeToAnother#0;class#UserOp#0" />
-                <element signature="method#updateUsernameByCNP#0;class#UserOp#0" />
-                <element signature="method#updatePasswordByCNP#0;class#UserOp#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.form">
-          <provider selected="true" editor-type-id="ui-designer" />
+        <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -233,30 +181,30 @@
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateAccountGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.form" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/LoginOP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/ClientOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/UserOp.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java" />
         <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.form" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java" />
       </list>
     </option>
   </component>
@@ -295,6 +243,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,20 +322,61 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="csc_1_Software_Design" type="462c0819:PsiDirectoryNode" />
               <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
-              <item name="UserExtendFrames" type="462c0819:PsiDirectoryNode" />
-              <item name="UpdateClientUserGUI" type="e9f4de52:FormNode" />
+              <item name="AdminGUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="BankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csc_1_Software_Design" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateAdminLoginGUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="BankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csc_1_Software_Design" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="CreateUserAccountGUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="BankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csc_1_Software_Design" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="LoginGUI" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="BankAssignment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BankAssignment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="csc_1_Software_Design" type="462c0819:PsiDirectoryNode" />
+              <item name="PresentationLayer" type="462c0819:PsiDirectoryNode" />
+              <item name="UserGUI" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
@@ -534,7 +524,7 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28987855" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30445343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -544,7 +534,7 @@
       <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.22160149" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.26256984" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49348232" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -563,7 +553,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28987855" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30445343" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -586,7 +576,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" weight="0.32955465" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32955465" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -658,18 +648,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#970#1155#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
@@ -683,16 +661,6 @@
             <element signature="e#579#580#0" expanded="true" />
             <element signature="e#621#622#0" expanded="true" />
             <element signature="e#652#653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,23 +683,6 @@
             <element signature="e#1038#1039#0" expanded="true" />
             <element signature="e#1080#1081#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -798,70 +749,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="45" column="41" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="54" column="76" lean-forward="true" selection-start-line="54" selection-start-column="76" selection-end-line="54" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1533#2388#0" expanded="true" />
-            <element signature="e#2387#2388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="75" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-513">
-          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1139#1393#0" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1611#2781#0" expanded="true" />
-            <element signature="e#2780#2781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/AdminOp.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -924,49 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="454" column="32" selection-start-line="454" selection-start-column="32" selection-end-line="454" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#22670#22864#0" expanded="true" />
-            <element signature="e#22863#22864#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1277#1278#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#3039#3427#0" expanded="true" />
-            <element signature="e#3426#3427#0" expanded="true" />
-            <element signature="e#3598#5524#0" expanded="true" />
-            <element signature="e#5523#5524#0" expanded="true" />
-            <element signature="e#5779#6085#0" expanded="true" />
-            <element signature="e#6084#6085#0" expanded="true" />
-            <element signature="e#6155#7184#0" expanded="true" />
-            <element signature="e#7183#7184#0" expanded="true" />
-            <element signature="e#7678#8388#0" expanded="true" />
-            <element signature="e#8387#8388#0" expanded="true" />
-            <element signature="e#9536#9717#0" expanded="true" />
-            <element signature="e#9716#9717#0" expanded="true" />
-            <element signature="e#9940#10134#0" expanded="true" />
-            <element signature="e#10133#10134#0" expanded="true" />
-            <element signature="e#10655#12313#0" expanded="true" />
-            <element signature="e#12312#12313#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/DataLayer/AccountOP.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -996,12 +845,195 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateClientGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/UpdateClientGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/CreateMoneyAccountUserGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserExtendFrames/UpdateClientUserGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateAdminLoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/CreateUserAccountGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminExtendFrames/CreateMoneyAccountGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/BusinessLayer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/LoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/UserGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/csc_1_Software_Design/PresentationLayer/AdminGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>BankAssignment:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

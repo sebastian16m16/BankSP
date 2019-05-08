@@ -19,6 +19,8 @@ public class CreateMoneyAccountGUI extends JFrame{
     private JButton backButton;
 
     public CreateMoneyAccountGUI(){
+
+        super();
         setSize(300,500);
         setTitle("Create Money Account");
         setLocationRelativeTo(null);

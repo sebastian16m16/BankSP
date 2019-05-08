@@ -23,6 +23,7 @@ public class UpdateClientGUI extends JFrame {
     int id;
 
     public UpdateClientGUI(final String cnp){
+        super();
         this.cnp = cnp;
 
 

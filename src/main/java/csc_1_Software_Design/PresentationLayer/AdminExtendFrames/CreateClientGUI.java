@@ -20,7 +20,7 @@ public class CreateClientGUI extends JFrame {
     private JButton backButton;
 
     public CreateClientGUI(){
-
+        super();
         setSize(400, 500);
         setTitle("Create new Client");
 

@@ -22,12 +22,13 @@ public class LoginGUI extends JFrame{
 
 
     public LoginGUI() {
-
+        super();
 
         setTitle("Login");;
         setSize(500,800);
 
         add(loginPanel);
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 

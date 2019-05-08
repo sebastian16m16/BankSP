@@ -33,6 +33,7 @@ public class AdminGUI extends JFrame{
     private JButton backToLoginButton;
 
     public AdminGUI(){
+        super();
         setTitle("Logged in as Admin");
         setSize(1300, 800);
 
@@ -40,6 +41,8 @@ public class AdminGUI extends JFrame{
         setLocationRelativeTo(null);
         getRootPane().setDefaultButton(searchButton);
         textField1.requestFocus();
+
+        add(adminPanel);
 
         //table setup
         final Font font = new Font("", 1, 20);
@@ -70,7 +73,6 @@ public class AdminGUI extends JFrame{
             }
         });
 
-        add(adminPanel);
         final AdminOp adminOp = new AdminOp();
 
 
