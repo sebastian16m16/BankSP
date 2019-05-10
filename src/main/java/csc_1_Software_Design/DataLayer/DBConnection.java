@@ -1,4 +1,4 @@
-package csc_1_Software_Design.BusinessLayer;
+package csc_1_Software_Design.DataLayer;
 import java.sql.Connection;
 import java.sql.DriverManager;
 

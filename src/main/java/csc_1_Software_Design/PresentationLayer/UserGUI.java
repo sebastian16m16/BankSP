@@ -265,11 +265,14 @@ public class UserGUI extends JFrame {
                                 receiver.getLast_name() + "\n First Name: " + receiver.getFirst_name(), "Confirmation",JOptionPane.QUESTION_MESSAGE, null,
                                 new String[]{"Yes", "No"}, "No");
                         if(response == "Yes"){
-                            userOp.transferMoney(sender_id, receiver_id, amount);
-                            JOptionPane.showMessageDialog(null, "Transfer was successful!");
-                            UserGUI update = new UserGUI(cnp);
-                            update.setVisible(true);
-                            setVisible(false);
+                            if(amount < userOp.getBalanceOfAccountByID(sender_id)) {
+                                userOp.transferMoney(sender_id, receiver_id, amount);
+                                JOptionPane.showMessageDialog(null, "Transfer was successful!");
+                                UserGUI update = new UserGUI(cnp);
+                                update.setVisible(true);
+                                setVisible(false);
+                            }else
+                                JOptionPane.showMessageDialog(null, "Insufficient Funds!");
                         }
 
                     }else

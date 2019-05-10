@@ -31,13 +31,7 @@ public class LoginOP{
 
     }
 
-    public  void addLoginIdToClient(Connection connection, Client client, Login login) throws SQLException{
-        String stmt = "UPDATE Client SET login_id = ? where client_id = ?";
-        PreparedStatement preparedStatement = connection.prepareStatement(stmt);
-        preparedStatement.setInt(1,login.getLogin_id());
-        preparedStatement.setInt(2,client.getClient_id());
-        preparedStatement.executeUpdate();
-    }
+
 
     public void createAdminLogin(Connection connection, String username, String password) throws SQLException{
         String stmt = "INSERT INTO Login (username, password, administrator) VALUES (?, ?, ?)";

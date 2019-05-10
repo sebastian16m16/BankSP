@@ -1,13 +1,10 @@
 package csc_1_Software_Design.PresentationLayer;
 
-import csc_1_Software_Design.BusinessLayer.DBConnection;
 import csc_1_Software_Design.DataLayer.LoginOP;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.sql.SQLException;
 
 public class CreateAdminLoginGUI extends JFrame{

@@ -3,7 +3,6 @@ package csc_1_Software_Design.BusinessLayer;
 
 import csc_1_Software_Design.DataLayer.*;
 
-import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -94,5 +93,9 @@ public class UserOp {
 
     public void updateClient(String cnp, String first_name, String last_name, String cni, String address) throws SQLException{
         clientOP.updateClient(connection.connection, cnp, first_name, last_name, address, cni);
+    }
+
+    public double getBalanceOfAccountByID(int id) throws SQLException {
+        return accountOp.getBalanceOfAccountByID(connection.connection, id);
     }
 }

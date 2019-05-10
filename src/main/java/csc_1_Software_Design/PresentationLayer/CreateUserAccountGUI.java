@@ -1,7 +1,5 @@
 package csc_1_Software_Design.PresentationLayer;
 
-import csc_1_Software_Design.BusinessLayer.DBConnection;
-import csc_1_Software_Design.DataLayer.Login;
 import csc_1_Software_Design.DataLayer.LoginOP;
 
 import javax.swing.*;
