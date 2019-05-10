@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class LoginGUI extends JFrame{
 
     public DBConnection dbConnection = DBConnection.getConnection();
-    private JPanel loginPanel;
+    public JPanel loginPanel;
     private JTextField USERNAMETextField;
     private JPasswordField PASSWORDPasswordField;
     private JButton Login;
@@ -24,11 +24,10 @@ public class LoginGUI extends JFrame{
     public LoginGUI() {
         super();
 
-        setTitle("Login");;
+        setTitle("Login");
         setSize(500,800);
 
         add(loginPanel);
-
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
@@ -46,11 +45,13 @@ public class LoginGUI extends JFrame{
                             AdminGUI adminGUI = new AdminGUI();
                             setVisible(false);
                             adminGUI.setVisible(true);
+
                         }else{
 
                             UserGUI userGUI = new UserGUI(loginOP.getCNPfromLogin(dbConnection.connection, USERNAMETextField.getText()));
                             setVisible(false);
                             userGUI.setVisible(true);
+
                         }
                     }else{
                         JOptionPane.showMessageDialog(null, "Wrong username or password!");
@@ -83,7 +84,4 @@ public class LoginGUI extends JFrame{
 
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
 }

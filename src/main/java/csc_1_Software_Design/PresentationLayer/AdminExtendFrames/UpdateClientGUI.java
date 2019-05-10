@@ -18,7 +18,7 @@ public class UpdateClientGUI extends JFrame {
     private JTextField cniField;
     private JButton backButton;
     private JButton UPDATEModifyButton;
-    private JPanel updatePanel;
+    public JPanel updatePanel;
     String cnp;
     int id;
 
@@ -26,13 +26,12 @@ public class UpdateClientGUI extends JFrame {
         super();
         this.cnp = cnp;
 
-
+        add(updatePanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 300);
         setTitle("Update Client");
         setLocationRelativeTo(null);
 
-        add(updatePanel);
         getRootPane().setDefaultButton(UPDATEModifyButton);
 
         final AdminGUI adminGUI = new AdminGUI();
@@ -90,8 +89,6 @@ public class UpdateClientGUI extends JFrame {
         setSize(400, 300);
         setTitle("Update Client");
         setLocationRelativeTo(null);
-
-        add(updatePanel);
 
         final AdminGUI adminGUI = new AdminGUI();
         final AdminOp adminOp = new AdminOp();

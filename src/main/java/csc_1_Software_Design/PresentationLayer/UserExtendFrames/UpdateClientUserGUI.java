@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class UpdateClientUserGUI extends JFrame{
-    private JPanel updateClientPanel;
+    public JPanel updateClientPanel;
     private JTextField lastNameField;
     private JTextField firstNameField;
     private JTextField addressField;
@@ -26,6 +26,7 @@ public class UpdateClientUserGUI extends JFrame{
         this.cnp = thisClient.getCnp();
         this.cni = thisClient.getCni();
 
+        add(updateClientPanel);
         setTitle("Update Personal Information");
         setSize(500, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,7 +36,6 @@ public class UpdateClientUserGUI extends JFrame{
         cnpLabel.setText(cnp);
         cniLabel.setText(cni);
 
-        add(updateClientPanel);
 
         lastNameField.setText(thisClient.getLast_name());
         firstNameField.setText(thisClient.getFirst_name());

@@ -5,7 +5,6 @@ import csc_1_Software_Design.DataLayer.Account;
 import csc_1_Software_Design.DataLayer.Client;
 import csc_1_Software_Design.PresentationLayer.UserExtendFrames.CreateMoneyAccountUserGUI;
 import csc_1_Software_Design.PresentationLayer.UserExtendFrames.UpdateClientUserGUI;
-import jdk.nashorn.internal.scripts.JO;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -14,7 +13,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class UserGUI extends JFrame {
-    private JPanel userPanel;
+    public JPanel userPanel;
     private JButton updatePersonalInformationButton;
     private JButton updateLoginInformationButton;
     private JLabel acc1TypeField;
@@ -53,6 +52,9 @@ public class UserGUI extends JFrame {
     public UserGUI(final String cnp) throws SQLException {
         super();
         this.cnp = cnp;
+
+
+        add(userPanel);
         final UserOp userOp = new UserOp();
 
         setTitle("Logged in as: "+ userOp.getFullClientName(cnp));
@@ -60,7 +62,6 @@ public class UserGUI extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        add(userPanel);
 
         ArrayList<Account> availableAccount = userOp.getClientAccount(cnp);
         ArrayList<JLabel> accountTypes = new ArrayList<>();

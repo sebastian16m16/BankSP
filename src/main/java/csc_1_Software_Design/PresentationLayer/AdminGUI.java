@@ -1,6 +1,5 @@
 package csc_1_Software_Design.PresentationLayer;
 
-import com.sun.xml.internal.bind.v2.model.core.ID;
 import csc_1_Software_Design.BusinessLayer.AdminOp;
 import csc_1_Software_Design.DataLayer.Account;
 import csc_1_Software_Design.DataLayer.Client;
@@ -23,7 +22,7 @@ public class AdminGUI extends JFrame{
     private JButton insertClientBtn;
     private JButton searchButton;
     private JButton deleteButton;
-    private JPanel adminPanel;
+    public JPanel adminPanel;
     private JComboBox comboBox1;
     private JTextField textField1;
     private JRadioButton IDRadioButton;
@@ -37,11 +36,12 @@ public class AdminGUI extends JFrame{
         setTitle("Logged in as Admin");
         setSize(1300, 800);
 
+        add(adminPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         getRootPane().setDefaultButton(searchButton);
         textField1.requestFocus();
-
+        textField1.setText("0");
         add(adminPanel);
 
         //table setup

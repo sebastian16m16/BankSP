@@ -21,19 +21,19 @@ public class CreateMoneyAccountUserGUI extends JFrame{
     private JButton backButton;
     private JLabel cnpLabel;
     private JTextField initialBalanceField;
-    private JPanel createAccountPanelUser;
+    public JPanel createAccountPanelUser;
 
     public CreateMoneyAccountUserGUI(final String cnp) throws SQLException {
         super();
         this.cnp = cnp;
 
+        add(createAccountPanelUser);
         setSize(300,500);
         setTitle("Create Money Account");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getRootPane().setDefaultButton(createAccountButton);
 
-        add(createAccountPanelUser);
 
         cnpLabel.setText(cnp);
 
@@ -43,6 +43,7 @@ public class CreateMoneyAccountUserGUI extends JFrame{
         backButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 userGUI.setVisible(true);
                 setVisible(false);
             }

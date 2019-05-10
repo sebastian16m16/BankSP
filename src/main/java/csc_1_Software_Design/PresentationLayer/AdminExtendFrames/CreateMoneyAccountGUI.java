@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class CreateMoneyAccountGUI extends JFrame{
-    private JPanel createAccountPanel;
+    public JPanel createAccountPanel;
     private JTextField cnpField;
     private JTextField typeField;
     private JTextField initialBalanceField;
@@ -28,7 +28,6 @@ public class CreateMoneyAccountGUI extends JFrame{
         getRootPane().setDefaultButton(createAccountButton);
 
         add(createAccountPanel);
-
         final AdminGUI adminGUI = new AdminGUI();
         final AdminOp adminOp = new AdminOp();
 

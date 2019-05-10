@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class CreateClientGUI extends JFrame {
-    private JPanel createClientPanel;
+    public JPanel createClientPanel;
     private JButton createClientButton;
     private JTextField cnpField;
     private JTextField cniField;
@@ -23,12 +23,12 @@ public class CreateClientGUI extends JFrame {
         super();
         setSize(400, 500);
         setTitle("Create new Client");
+        add(createClientPanel);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         getRootPane().setDefaultButton(createClientButton);
 
-        add(createClientPanel);
         final AdminGUI adminGUI = new AdminGUI();
 
         backButton.addActionListener(new ActionListener() {

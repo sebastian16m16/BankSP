@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 
 public class CreateUserAccountGUI extends JFrame{
-    private JPanel createUserLoginPanel;
+    public JPanel createUserLoginPanel;
     private JTextField usernameField;
     private JButton createAccountButton;
     private JTextField cnpField;
@@ -21,12 +21,14 @@ public class CreateUserAccountGUI extends JFrame{
     public CreateUserAccountGUI(){
         super();
 
-        add(createUserLoginPanel);
         setTitle("Create User Login");
         setSize(400,800);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
         getRootPane().setDefaultButton(createAccountButton);
+
+        add(createUserLoginPanel);
+
         final LoginGUI loginGUI = new LoginGUI();
 
         backButton.addActionListener(new ActionListener() {
@@ -52,7 +54,6 @@ public class CreateUserAccountGUI extends JFrame{
                         JOptionPane.showMessageDialog(null, "Login Created with\n" + "Username: " +usernameField.getText() +"\n" +
                                 "CNP: " + cnpField.getText() + "\n 0 errors");
                     }
-
                         setVisible(false);
                         loginGUI.setVisible(true);
 
